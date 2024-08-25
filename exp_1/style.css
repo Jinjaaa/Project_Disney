@@ -1,0 +1,89 @@
+body {
+    font-family: Bungee Tint;
+    background: rgb(255, 247, 248);
+    background-image: radial-gradient(rgb(251, 86, 86) 1px, transparent 0);
+    background-size: 40px 40px;
+    
+}
+
+.bg_princess{
+    background-image: url(p.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position-y:bottom;
+    background-position-x:center;
+    transition: all 0s ease-in-out;
+    transform:scale(1.0) ;
+}
+.bg_princess:hover{
+    background-image: url(/bg_pink.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    transform:scale(1.0) ;
+}
+.fontt{
+    width: 250px;
+    padding: 10px;
+    background-color: rgb(250, 1, 101);
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.64));
+}
+.nav-item{
+    transition: all 0.2s ease-in-out;
+}
+.nav-item:hover{
+    transform: translateY(-3px);
+    color: white;
+}
+.content_1{
+    font-family: Mouse Memoirs;
+    color: rgb(251, 93, 119);
+    text-align: center;
+}
+.blck{
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.64));
+}
+.abt_princesss{
+    margin: 0;
+    padding: 0;
+    animation: slideIn 0.6s forwards ease-out;
+    scale: .8; opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline:view();
+    animation-range: 0px 500px;
+}
+.animated{
+    animation: slideIn 0.6s forwards ease-out;
+    scale: .8; opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline:view();
+    animation-range: 0px 300px;
+}
+
+@keyframes fade-in{
+    to{
+        scale:1; opacity: 1;
+    }
+
+}
+
+.animatedd {
+    animation: bounce 0.6s ease-out forwards;
+    transform: scale(0.4); /* Initial scale */
+    opacity: 0; /* Initial opacity */
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(0.4);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2); /* Bounce effect */
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
